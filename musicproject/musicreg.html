@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>
+            sign up
+        </title>
+        <style>
+            body{
+                background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://thumbs.dreamstime.com/b/panoramic-illustration-yellow-music-notes-flowing-curved-stave-blurred-notes-bokeh-purple-gradient-background-158264633.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-top: 50px;
+                text-align:center;
+                
+            }
+            h1,h3{
+                font-size: 50px;
+                color: aliceblue;
+                text-shadow:10px 10px 10px black;
+            }
+
+            #abcd{
+                margin-top: 60px;
+                background-color: gainsboro;
+                width:500px;
+                height:auto;
+                justify-content: space-between;
+                text-decoration: solid;
+                padding: 10px;
+                margin-left: 500px;
+                border-radius: 15px;
+            }
+            button{
+                width: 200px;
+                padding: 15px 0;
+                text-align: center;
+                margin: 20px 10px;
+                border-radius: 25px;
+                font-weight: bold;
+                border: 2px solid #009688;
+                background: transparent;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                color: white;
+            }
+            span{
+                background: #009688;
+                height:100%;
+                width: 0;
+                border-radius:25px ;
+                position:absolute;
+                left:0;
+                bottom:0;
+                z-index: -1;
+                transition: 0.5s;
+            }
+            button:hover span{
+                width: 100%;
+            }
+            button:hover{
+                border:none;
+            }
+            p{
+                margin-top: 150;
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            h4{
+                color: white;
+            }
+            
+            </style>
+            </head>
+            <body>
+                
+                <h1>VP MUSIC WORLD</h1>
+                <h3>REGISTER HERE...!!!</h3>
+                <h2>
+                  <div id="abcd">  
+                <form name="newform" action="musicreg.php" method="POST">
+    <pre><label for="fname">First Name         :</label> <input type="text" id="fname" name="fname" value="" required=""></pre>
+    
+    <pre><label for="lname">Last Name          :</label> <input type="text" id="lname" name="lname" value="" required=""></pre>
+
+    <pre><label for="uname">User Name          :</label> <input type="text" id="uname" name="uname" value="" required=""></pre>
+    
+    <pre><label for="upswd1">Create Password    :</label> <input type="password" id="upswd1" name="upswd1" value="" required=""></pre>
+    
+    <pre><label for="upswd2">Confirm Password   :</label> <input type="password" id="upswd2" name="upswd2" value="" required=""></pre>
+    
+    <pre><label for="email">Email              :</label> <input type="email" id="email" name="email" value="" required=""></pre>
+
+    <pre><label for="phno">Phone No           :</label> <input type="int" id="phno" name="phno" value="" required=""></pre>
+       
+                
+                </div>
+    <button input type="submit" name="signup" method="POST"  value="SIGNUP"  ><span></span>SIGNUP</button>
+</form>
+</h2>
+
+                <h4>Click here for  <a href="musicindex.html">LOGIN...!!!</a></h4>
+
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+<head>
+    <style>
+        *
+            {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+        }   
+        body
+            {
+            align-items: center;
+            background-image: url(https://img.wallpapersafari.com/desktop/800/450/89/6/p9aZ2K.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form
+            {
+                height: 30rem;
+                width: 25rem;
+                display: flex;
+                flex-direction: column;
+                background-color:rgba(255,255,255,0.06);
+                box-shadow: 0 10px 42px 0 rgba(31,38,135,.37);
+                border-radius: 30px;
+                border-left: 1px solid rgba(255,255,255,.3);
+                border-right: 1px solid rgba(255,255,255,.3); 
+                float: left;
+                margin:120 0 0 190;
+            }
+        h1
+            {
+                font-size: 50px;
+                text-align: center;
+                color: silver;
+                text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+                letter-spacing: 3px;
+                margin-bottom: 15%;
+                opacity: .7;
+
+            }
+        label
+            {
+                font-size: 20px;
+                color: wheat;
+                margin-left: 10%;
+            }
+        input
+            {
+                width: 80%;
+                height: 25px;
+                margin: 5% auto;
+                margin-bottom: 8%;
+                border: none;
+                outline: none;
+                border: transparent;
+                color: black; 
+            }
+        button
+            {
+                width: 50%;
+                margin: 3% auto;
+                color: wheat;
+                font-size: 15px;
+                opacity: .7;
+                background: rgba(255,255,255,0.06);
+                padding: 10px 3px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                text-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+                box-shadow: blue;
+                border-left: 1px white;
+                border-top: 1px white;
+            }
+        button:hover
+            {
+                font-size: 25px;
+                color: gold;
+            }
+        a
+            {
+                font-size: 15px;
+                text-align: center;
+                color: white;
+                opacity: .7;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <form name="myform" action="musiclog.php" method="POST">
+        <h1>LOGIN</h1>
+
+        <label for="uname">USERNAME</label>
+        <input type="text" id="uname" name="uname"  value=""><br>
+
+        <label for="upswd1">PASSWORD</label>
+        <input type="password" id="upswd1" name="upswd1"  value="">
+
+        <button input type="submit" name="login" method="POST" value="Login">login</button>
+
+        <button ><a href="#">Forgot password</a></button>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+    body{
+      background-color: black;
+      color: white;
+        }
+        h1,h2,button{
+            text-align: center;
+        }
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px 0 45% ;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #009688;
+            background: transparent;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            color:white;
+        }
+        span{
+            background: #009688;
+            height:100%;
+            width: 0;
+            border-radius:25px ;
+            position:absolute;
+            left:0;
+            bottom:0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+        button:hover{
+            border:none;
+        }
+        a{
+        text-decoration: none;
+        color:white
+        }
+        ul li{
+            text-align: center;
+            margin:25px;
+            display: inline-block;
+            justify-content: space-between;
+        }
+        li:hover{
+           font-size: 20px;
+           cursor:pointer;
+        }
+        li{
+          font-size: large;
+        }
